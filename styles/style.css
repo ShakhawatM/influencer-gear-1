@@ -1,3 +1,184 @@
 * {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+body header {
+  padding: 100px 100px 0px 100px;
+}
+body main {
+  padding: 0px 100px 100px 100px;
+}
+
+/* ================= hesder styles ============= */
+
+/*=================== main section styles ===================*/
+header {
+  display: hide;
+}
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.nav-list {
+  display: inline-flex;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 30px;
+}
+
+/*'''''''''''''''''''''''================== media query====================== ''''''''''''''''''*/
+
+/* @media only screen and (max-width: 688px) {
+  .navigation-menu{
+    width: 100%;
+  }
+  .nav-list{
+    display: flex;
+  }
+} */
+
+/*================ hero styles ==============*/
+.hero-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+.hero-info h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+  color: #3a3a3a;
+  margin-bottom: 20px;
+}
+.hero-info p {
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
+.hero-info button {
+  color: #fff;
+  border: 0;
+  border-radius: 41px;
+  background: #e02c6d;
+  padding: 10px 24px;
+}
+.hero-img img {
+  background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  width: 440px;
+  height: 414px;
+  padding: 25px 0px 0px 40px;
+}
+
+/*'''''''''''''''''''''''================== media query====================== ''''''''''''''''''*/
+
+@media only screen and (max-width: 688px) {
+  body header {
+    padding: 0px;
+    margin: auto;
+  }
+  body main {
+    padding: 0px;
+    margin: auto;
+  }
+  .hero-info {
+    text-align: center;
+  }
+  .hero-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .hero-info h1 {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .hero-info p {
+    font-size: 14px;
+  }
+  .hero-img img {
+    width: 202px;
+    height: 190px;
+    background-image: none;
+  }
+}
+
+/*============ host company section ===========*/
+
+.company {
+  margin: 100px 0px 100px 0px;
+}
+.host-company img {
+  margin-right: 55px;
+}
+/*'''''''''''''''''''''''================== media query====================== ''''''''''''''''''*/
+
+@media only screen and (max-width: 688px) {
+  .company {
+    margin: 50px 15px 50px 15px;
+    width: 100%;
+  }
+  .host-company {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .host-company img {
+    margin: 0px;
+  }
+}
+
+/*============== Popular Collection ==============*/
+.popular {
+}
+.popular-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.popular-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+}
+.featured-products {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.featured-products img {
+  padding: 30px;
+}
+.featured-products button {
+  color: #fff;
+  border: 0;
+  border-radius: 41px;
+  background: #e02c6d;
+  padding: 10px 24px;
+  margin-top: 20px;
+}
+.featured-products p{
+  margin-top: 20px;
+}
+
+
+footer{
+  background-color: #0A0826;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
